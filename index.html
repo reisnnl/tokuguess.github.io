@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokuGuess</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/icon.png">
+    <meta name="description" content="Jogo para adivinhar tudo sobre Tokusatsu">
+    <meta name="keywords" content="Tokusatsu, jogo, adivinhar">
+    <meta name="author" content="Reinaldo Calixto Junior">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body class="index">
+
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="imgs/logo.png" alt="TokuGuess Logo" class="logo">
+        </a>
+    </div>
+
+    <div class="buttons-container">
+        <a href="classic.html" title="Get clues on every try">
+        <button type="button" class="classic"><b>Classic</b></button>
+        </a>
+        <a href="catch.html" title="Guess the show with it's catchphrase">
+        <button type="button" class="catch"><b>Catchphrase</b></button>
+        </a>
+        <a href="emoji.html" title="Guess with a set of emojis">
+        <button type="button" class="emoji"><b>Emoji</b></button>
+        </a>
+        <a href="poster.html" title="Guess the show's poster">
+        <button type="button" class="poster"><b>Poster</b></button>
+        </a>
+    </div>
+
+    <a href="registro.html" title="Login/Registro">
+        <img src="imgs/lr.png" alt="Henshin (Login;Register)" class="lr">
+    </a>
+
+    <div class="cog" id="cog">
+        <a href="settings.html">
+        <img src="imgs/cog.png" alt="Cog">
+        </a>
+    </div>
+
+    <script>
+        document.getElementById("cog").addEventListener("click", function() {
+            this.classList.add("rotate");
+
+            
+            setTimeout(() => {
+                this.classList.remove("rotate");
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
